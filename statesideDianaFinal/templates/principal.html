@@ -1,0 +1,157 @@
+<div ng-controller="MenuCtrl">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                 <img alt="Brand" class="logonav" src="img/logo.png">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a class="page-scroll" href="#home" ng-click="go(0)">Home</a></li>
+                <li><a class="page-scroll" href="#about" ng-click="go(390)">About Us</a></li>
+                <li><a class="page-scroll" href="#services">Services</a></li>
+                <li><a class="page-scroll" href="#contact">Contact</a></li>
+                <button type="button" ng-click="go()" class="btn btn-default navbar-btn color-prueba"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Login</button>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section id="home">
+    <div id="slides">
+        <img src="img/Banner.png" alt="" />
+        <img src="img/Banner2.png" alt="" />
+        <img src="img/Banner.png" alt="" />
+        <img src="img/Banner2.png" alt="" />
+    </div>
+</section>
+
+<section id="about" class="container content-section text-center">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <h2>{{tituloabout}}</h2>
+            <p>{{desabout}}</p>
+        </div>
+    </div>
+</section>
+
+<section id="services" class="container content-section text-center">
+    <div class="row">
+    <div class="col-lg-12  col-md-12  col-sm-12 ">
+            <div class="col-lg-3 col-md-3 col-sm-3">
+                <div id="f1_container">
+                    <div id="f1_card" class="shadow">
+                        <div class="front face">
+                            <img src="img\tickets.png" />
+                        </div>
+                        <div class="back face center">
+                            <img src="img\ticketsback.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="col-lg-3 col-md-3 col-sm-3 ">
+                <div id="f1_container">
+                    <div id="f1_card" class="shadow">
+                        <div class="front face">
+                            <img src="img\camera.png" />
+                        </div>
+                        <div class="back face center">
+                            <img src="img\cameraback.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="col-lg-3 col-md-3 col-sm-3 ">
+                <div id="f1_container">
+                    <div id="f1_card" class="shadow">
+                        <div class="front face">
+                            <img src="img\beer.png" />
+                        </div>
+                        <div class="back face center bg-tomato">
+                            <img src="img\beerback.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="col-lg-3 col-md-3 col-sm-3 ">
+                <div id="f1_container">
+                    <div id="f1_card" class="shadow">
+                        <div class="front face">
+                            <img src="img\devices.png" />
+                        </div>
+                        <div class="back face center bg-goldenrod">
+                            <img src="img\devicesback.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<hr size="3">
+
+<section id="contact" class="container content-section text-center">
+
+<div class="media media-obj">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object media-image" src="img/image.png" alt="...">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading media-texto">Lorem Ipsum</h4>
+   <p class="media-texto"> {{desmedia}}</p>
+  </div>
+</div>
+
+<div class="media media-obj">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object media-image" src="img/image.png" alt="...">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading media-texto">Lorem Ipsum</h4>
+   <p class="media-texto"> {{desmedia}}</p>
+  </div>
+</div>
+
+<div class="media media-obj">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object media-image" src="img/image.png" alt="...">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading media-texto">Lorem Ipsum</h4>
+   <p class="media-texto"> {{desmedia}}</p>
+  </div>
+</div>
+
+</section>
+
+
+
+</div>
+<script>
+    $(document).ready(function () {
+        $('#slides').slidesjs({
+            width: 940,
+            height: 528,
+            play: {
+                active: true,
+                auto: true,
+                interval: 4000,
+                swap: true
+            }
+        });
+    });
+</script>
